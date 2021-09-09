@@ -3,14 +3,15 @@ pipeline {
     
     tools
     {
-       maven "Maven"
+       java "java8" 
+       maven "maven3"
     }
      
     stages {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'https://github.com/devops4solutions/CI-example.git'
+                git branch: 'master', url: 'https://github.com/PMayukh/devops_ansible.git'
              
           }
         }
