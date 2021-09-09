@@ -3,7 +3,7 @@ pipeline {
     
     tools
     {
-       java "java8" 
+       jdk "java8" 
        maven "maven3"
     }
      
