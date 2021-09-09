@@ -3,9 +3,7 @@
 # chkconfig: 345 99 28
 # description: Starts/Stops Apache Tomcat
 #
-# Tomcat 7 start/stop/status script
-# Forked from: https://gist.github.com/valotas/1000094
-# @author: Miglen Evlogiev <bash@miglen.com>
+# Tomcat 9 start/stop/status script
 #
 # Release updates:
 # Updated method for gathering pid of the current proccess
@@ -15,7 +13,7 @@
 #
  
 #Location of JAVA_HOME (bin files)
-export JAVA_HOME=/usr/lib/jvm/jre
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
  
 #Add Java binary files to PATH
 export PATH=$JAVA_HOME/bin:$PATH
